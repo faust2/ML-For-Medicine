@@ -1,3 +1,4 @@
+# Dataset https://www.kaggle.com/joniarroba/noshowappointments
 import numpy as np
 import matplotlib as plt
 import tensorflow as tf
@@ -24,9 +25,7 @@ for col in X:
             ENC.fit(X[col])
             X[col] = ENC.transform(X[col])
             count += 1
-print('%d columns were encoded.' % count)
 X = pd.get_dummies(X)
-print('Training Features shape: ', X.shape)
 ##################################################################################
 from sklearn.model_selection import train_test_split
 X_train, X_test, Y_train, Y_test=train_test_split(X,Y,test_size=0.1,random_state=0)
