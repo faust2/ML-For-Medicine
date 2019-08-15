@@ -1,3 +1,4 @@
+# Dataset https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia/data
 import tensorflow as tf
 import pandas as pd
 import numpy as np
